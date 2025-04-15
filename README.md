@@ -1,8 +1,16 @@
-# Valorant Stream Yoinker
+# Changes
+1) Added Rank Reveal of all acts i.e Current_Rank|Prev_Rank|Prev_Rank|Prev_Rank|Prev_Rank
+2) Added Level Reveal i.e 0 if its hidden. 100 if its not hidden
+3) Removed twitch checks and so on.... So, we only have data as follows:
+  ```
+    Jett - ABCDE#0104 - 69 - A3|Imm1|Imm1|Imm1|A2|A3|Imm2
+  ```
+4) First Run Game -> Run python main.py
+5) If you get error: **Client Activation Error**, then repeat step **3**
+
+# Valorant Rank Yoinker
 Find the real username behind all hidden names by bypassing streamer mode, check all possible twitch names and print if a streamer is live
 
-# Discord Support Server
-https://discord.com/invite/faeM7p92pz
 
 # How to use
 **MAKE SURE VALORANT IS OPEN BEFORE RUNNING.** Wait for a game to start, and then names will start printing and being checked. Make sure to adjust your settings.json file to your preferences. You can open this file in any text editor (e.g Notepad).
@@ -11,16 +19,12 @@ settings.json:
 
     - stateInterval: int. change for faster or slower delays between gamestate loop (Slower = less CPU usage. Faster = more CPU usage)
 
-    - twitchReqDelay: int. the delay for the request checking if a streamer is live. If you are getting ratelimited, make this slower. If you want faster loading times, make this faster.
+    - twitchReqDelay: int. leave it as is....
     
-    - skipTeamPlayers: boolean. decide whether or not you want to skip team members during the process of checking possible twitch names.
+    - skipTeamPlayers: boolean. leave it as it is.
     
-    - skipPartyPlayers: boolean. decide whether or not you want to skip party members during the process of checking possible twitch names.
+    - skipPartyPlayers: boolean. leave it as it is.
 
-# Example
-<p align="center">
-    <img src="https://raw.githubusercontent.com/deadly/valorant-stream-yoinker/main/example.png" alt="screenshot of VALORANT Stream Yoinker">
-</p>
 
 # Regions
 The program will ask you for your region. The available regions are NA, EU, LATAM, BR, AP, KR, and PBE. Type the region that you play on. Here is a list of server locations and their respective region: https://support-valorant.riotgames.com/hc/en-us/articles/360055678634-Server-Select
